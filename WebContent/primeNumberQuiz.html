@@ -15,13 +15,14 @@
     	</div>
     	
 	    	<form action="#">
-	    		<p class="lead">
+	    		<p>
+	    			<div class="timeDiv"><b>Time left:</b></div> <div id="timeLeft" class="timeDiv">0</div>
+	    		</p>
+	    		<p >
 	    			<input type="button" name="startButton" value="Start Quiz" onClick="PrimeNumberQuiz().startQuiz()"></input>
 	    		</p>
-	    		<p>
-	    			<b>Time left:</b> <div id="timeLeft">0</div>
-	    		</p>
-	    		<p class="lead">
+	    		
+	    		<p >
 		    		<h3>Enter a prime number:</h3>
 		    		<input type="text" name="numberInput" id="numberInput"></input>
 		    		<input type="button" name="submitButton" id="submitButton" value="Submit" ></input>

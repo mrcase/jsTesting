@@ -12,3 +12,9 @@
 	background-color: #FF6666;
 	color: #802626;
 }
+
+.timeDiv {
+	font-size: 20px;
+	width: 200px;
+	display: inline;
+}
