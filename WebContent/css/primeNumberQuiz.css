@@ -1,0 +1,14 @@
+.answers {
+	width: 100px;
+	
+}
+
+.correct {
+	background-color: #99C299;
+	
+}
+
+.incorrect {
+	background-color: #FF6666;
+	color: #802626;
+}

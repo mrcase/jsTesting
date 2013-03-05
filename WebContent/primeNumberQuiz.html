@@ -5,13 +5,35 @@
         <meta charset="UTF-8">
         <title>Prime Number Quiz</title>
         <script src="js/src/PrimeNumberQuiz.js"></script>
+        
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="css/primeNumberQuiz.css" rel="stylesheet" media="screen">
+        <script src="http://code.jquery.com/jquery.js"></script>
     </head>
-    	<h1>Prime Number Quiz</h1>
-    	<form action="#">
-    		<input type="text" name="numberInput" id="numberInput"></input>
-    		<input type="button" name="submitButton" value="Submit"></input>
-    		<input type="button" name="startButton" value="Start" onClick="PrimeNumberQuiz().startQuiz()"></input>
-    	</form>
+    	<div class="page-header">
+    		<h1>Prime Number Quiz</h1>
+    	</div>
+    	
+	    	<form action="#">
+	    		<p class="lead">
+	    			<input type="button" name="startButton" value="Start Quiz" onClick="PrimeNumberQuiz().startQuiz()"></input>
+	    		</p>
+	    		<p>
+	    			<b>Time left:</b> <div id="timeLeft">0</div>
+	    		</p>
+	    		<p class="lead">
+		    		<h3>Enter a prime number:</h3>
+		    		<input type="text" name="numberInput" id="numberInput"></input>
+		    		<input type="button" name="submitButton" id="submitButton" value="Submit" ></input>
+		    	</p>	
+	    		
+	    	</form>
+	    	
+	    	<p>
+	    		<div class="answers" id="answers">
+	    		</div>
+	    	</p>
+	    
     <body>
     </body>
 </html>    
