@@ -4,7 +4,6 @@ function PrimeNumberQuiz() {
 	var secondsElapsed = 1;
 	
 	var incrementSecondsElapsed = function() {
-		
 		$('#timeLeft').html(secondsElapsed);
 		secondsElapsed++;
 	};
@@ -21,7 +20,7 @@ function PrimeNumberQuiz() {
 		quizStarted = true;
 	};
 	
-	var handleSubmit = function() {
+	var handleSubmitting = function() {
 		if(quizStarted) {
 			var submittedAnswer = $('#numberInput').val();
 			var answerClass = isPrime(submittedAnswer) ? 'correct' : 'incorrect';
@@ -57,7 +56,7 @@ function PrimeNumberQuiz() {
 			startQuiz: function(){
 				resetPageState();
 				
-				$('#submitButton').click(handleSubmit);
+				$('#submitButton').click(handleSubmitting);
 				
 				runQuizTimer();
 			},

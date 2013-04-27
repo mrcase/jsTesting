@@ -14,6 +14,7 @@ describe("Before quiz start", function() {
 
 describe("After start button is pressed and before any entries are made", function() {
 	beforeEach(function () {
+		
 		this.primeNumberQuiz = PrimeNumberQuiz();
 		$('#fixture').remove();
 		$('body').append('<div id="fixture"></div>');

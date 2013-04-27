@@ -1,9 +1,14 @@
 module( "Initialization Tests", {
     setup: function() {
+    	if(!$('#qunit-fixture').length) {
+    		$('body').append('<div id="qunit-fixture"></div>');
+    	} 
+    	
     	$('#qunit-fixture').append('<div id="answers">Yo yo yo</div>');
     	$('#qunit-fixture').append('<div id="timeLeft">45</div>');
         
     	this.primeNumberQuiz = PrimeNumberQuiz();
+    	this.primeNumberQuiz.
     }
 });
 
@@ -23,7 +28,7 @@ test("quiz is started after start button is pressed", function(){
 
 test("answers div is cleared out when quiz is started", function(){
 	this.primeNumberQuiz.startQuiz();
-	
+	console.log("Hello: " + $('#qunit-fixture').html());
 	deepEqual("", $('#answers').html());
 });
 
@@ -35,6 +40,9 @@ test("timer is reset to 0 when quiz is started", function(){
 
 module( "Timer Tests", {
     setup: function() {
+    	if(!$('#qunit-fixture').length) {
+    		$('body').append('<div id="qunit-fixture"></div>');
+    	} 
     	$('#qunit-fixture').append('<div id="answers">Yo yo yo</div>');
     	$('#qunit-fixture').append('<div id="timeLeft">45</div>');
         
@@ -88,6 +96,9 @@ test("quiz ends after 15 seconds have passed", function(){
 
 module( "Quiz Tests", {
     setup: function() {
+    	if(!$('#qunit-fixture').length) {
+    		$('body').append('<div id="qunit-fixture"></div>');
+    	} 
     	$('#qunit-fixture').append('<div id="answers">Yo yo yo</div>');
     	$('#qunit-fixture').append('<div id="timeLeft">45</div>');
     	$('#qunit-fixture').append('<<input type="text" name="numberInput" id="numberInput">');
